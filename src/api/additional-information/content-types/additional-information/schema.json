@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "additional_informations",
+  "info": {
+    "singularName": "additional-information",
+    "pluralName": "additional-informations",
+    "displayName": "AdditionalInformation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

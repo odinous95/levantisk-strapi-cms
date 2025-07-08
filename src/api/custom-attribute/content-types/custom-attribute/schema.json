@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "custom_attributes",
+  "info": {
+    "singularName": "custom-attribute",
+    "pluralName": "custom-attributes",
+    "displayName": "CustomAttribute"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "attributeName": {
+      "type": "string"
+    }
+  }
+}
