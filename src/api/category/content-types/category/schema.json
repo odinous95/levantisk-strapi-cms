@@ -23,6 +23,25 @@
       "relation": "oneToMany",
       "target": "api::product.product",
       "mappedBy": "category"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "productCount": {
+      "type": "integer"
+    },
+    "postCount": {
+      "type": "integer"
     }
   }
 }

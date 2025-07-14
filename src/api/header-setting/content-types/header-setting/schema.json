@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "header_settings",
+  "info": {
+    "singularName": "header-setting",
+    "pluralName": "header-settings",
+    "displayName": "headerSetting"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "headerText": {
+      "type": "string"
+    },
+    "headerLogo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

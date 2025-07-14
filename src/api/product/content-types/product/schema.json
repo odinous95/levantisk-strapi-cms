@@ -70,11 +70,32 @@
       "target": "api::category.category",
       "inversedBy": "products"
     },
-    "product_variants": {
+    "productVariants": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::product-variant.product-variant",
       "mappedBy": "product"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review",
+      "mappedBy": "product"
+    },
+    "images": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
