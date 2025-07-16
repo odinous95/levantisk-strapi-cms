@@ -76,12 +76,6 @@
       "target": "api::product-variant.product-variant",
       "mappedBy": "product"
     },
-    "reviews": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::review.review",
-      "mappedBy": "product"
-    },
     "images": {
       "type": "media",
       "pluginOptions": {
@@ -96,6 +90,24 @@
         "videos",
         "audios"
       ]
+    },
+    "reviews": {
+      "type": "integer",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "imgs": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.image-gallery",
+      "repeatable": true
     }
   }
 }
